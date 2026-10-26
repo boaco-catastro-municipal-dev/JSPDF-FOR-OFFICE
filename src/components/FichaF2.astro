@@ -18,7 +18,16 @@ import FichaForm from "./FichaForm.astro";
 
   <div class="form-group">
       <label for="SISCAT" class="form-label">SISCAT</label>
-      <input type="number" id="SISCAT" name="SISCAT" class="form-input" placeholder="SISCAT" />
+      <input 
+        type="text" 
+        id="SISCAT" 
+        name="SISCAT" 
+        class="form-input" 
+        placeholder="0904R002090003" 
+        pattern="^[0-9]{4}[URur][0-9]{9}$"
+        maxlength="14"
+        title="El quinto carácter debe ser obligatoriamente U (Urbano) o R (Rural)"
+        />
   </div>
 
   <div class="form-group">
